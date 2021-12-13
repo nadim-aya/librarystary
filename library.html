@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    <title>STARY LIBRARY</title>
+</head>
+<body>
+                       <form action="" method="post" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+            <label for="Name">TITRE</label> <br>
+            <input type="text" id="name" name="name"   required /> <br>
+            <label for="lname">AUTEUR</label> <br>
+            <input type="text" id="lname" name="lname"  required /> <br>
+            <label for="text">prix</label> <br>
+            <input type="number" id="prix" name="prix" required /> <br>
+            <label for="date">DATE DE PUBLICATION </label> <br>
+            <input type="date" id="date" name="date"> <br>
+            <label for="language">language</label> <br>
+             <select id="language" name="language"> <br>
+               <option value="Anglais">Anglais</option> 
+               <option value="Francais">Francais</option> 
+               <option value="Espagnole">Espagnole</option> 
+               <option value="Arabe">Arabe</option> 
+             </select> <br>
+
+             <p>TYPE</p> <br>
+            <input type="radio" id="Roman" name="fav_language" value="Roman">
+             <label for="Roman">Roman</label>
+             <input type="radio" id="Essai" name="fav_language" value="Essai">
+             <label for="Essai">Essai</label>
+             <input type="radio" id="Bande-Dessinée" name="fav_language" value="Bande-Dessinée">
+           <label for="javascript">Bande-Dessinée</label>
+           <p id="demo" style="color: rgb(255, 255, 255);"></p>
+
+          </form>
+
+          <button id="enrg" class="button button2" onclick="readFormData()">Enregitrer</button>
+
+          <button id="update" class="button button2" style="display:none" onclick="Javacsript:updateRecord()">Update</button>
+    </section>
+    <section>
+    <table class="blueTable" id="employeelist">
+       <thead>
+        <tr>
+        <th>head1</th>
+        <th>head2</th>
+        <th>head3</th>
+        <th>head4</th>
+        <th>head5</th>
+        <th>head6</th>
+        <th>head7</th>
+        </tr>
+        </thead>
+
+        </tr>
+    </table>
+<script src="LIBRARY.js" ></script>
+</body>
+</html>
