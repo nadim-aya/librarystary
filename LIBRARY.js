@@ -9,24 +9,26 @@ function readFormData(){
     let date = document.getElementById("date").value;
     let language  = document.getElementById("language").value; 
     let rbs = document.querySelector("input[name='fav_language']:checked").value;
+    console.log(rbs);
+    console.log(rbs=="");
     if(name!="" && prix!="" && date!="" && language!="" && rbs!=""){
     
        
         
            var table = document.getElementById("employeelist");
            var rowCount = table.rows.length;
-          //  this number row 
+        
            var row = table.insertRow(rowCount);
           
            
           
-           cl1=row.insertCell(0).innerHTML= name;
-           cl2=row.insertCell(1).innerHTML= lname;
-           cl3=row.insertCell(2).innerHTML= prix;
-           cl4=row.insertCell(3).innerHTML= date;
-           cl5=row.insertCell(4).innerHTML= language;
-           cl6=row.insertCell(5).innerHTML= rbs;
-           cl7=row.insertCell(6).innerHTML= `
+           row.insertCell(0).innerHTML= name;
+           row.insertCell(1).innerHTML= lname;
+           row.insertCell(2).innerHTML= prix;
+           row.insertCell(3).innerHTML= date;
+           row.insertCell(4).innerHTML= language;
+           row.insertCell(5).innerHTML= rbs;
+           row.insertCell(6).innerHTML= `
            <button  type="button" value = "Delete" onClick="Javacsript:deleteRow(this)"><i class="fas fa-trash"></i></button >
            <button  type="button" value = "Edit" onClick="Javacsript:onEdit(this)">  <i class="fas fa-edit"></i></button >
            `;
